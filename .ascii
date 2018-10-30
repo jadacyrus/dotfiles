@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ESC_SEQ="\x1b["
+RST="\x1b[0m"
+R=$ESC_SEQ"49m"
+G=$ESC_SEQ"38;5;154m"
+W=$ESC_SEQ"38;5;255m"
+B=$ESC_SEQ"38;5;49m"
+
+HOSTNAME=$(hostname)
+
+echo -e "\n"
+echo -e "   ${W}꜒${B}             __   ___  __     __        __             __   ___    ${W}˥"
+echo -e "       ${B}|__| \ / |__) |__  |__) | /  \ |\ | |__) |     /\  |  \ |__  "
+echo -e "       ${G}|  |  |  |    |___ |  \ | \__/ | \| |__) |___ /~~\ |__/ |___ "
+echo -e "   ${W}꜖                                                                   ˩"
+echo -e "\n"
+echo -e "   ${G}» ${W}${HOSTNAME}"
+echo -e "\n"
+
